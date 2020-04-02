@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:id="@+id/row_search_layout"
+    android:layout_margin="5dp">
+    <TextView
+        android:id="@+id/search_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="An Room is available near shantinagr"/>
+    <TextView
+        android:id="@+id/search_city"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/search_mark"
+        android:layout_alignParentEnd="true"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:layout_marginRight="25dp"
+        android:text="City"/>
+    <TextView
+        android:id="@+id/search_posted_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/search_title"
+        android:text="Posted on: 2021 mar 21"/>
+    <TextView
+        android:id="@+id/search_mark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp"
+        android:textColor="#009688"
+        android:layout_marginRight="20dp"
+        android:text="[Available]"/>
+    <View
+        android:layout_below="@id/search_posted_date"
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:layout_marginTop="8dp"
+        android:background="#6D6D6D"/>
+</RelativeLayout>

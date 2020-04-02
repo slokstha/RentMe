@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/edit_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Edit post"
+            android:textColor="@android:color/black"
+            android:padding="10dp"
+            android:textAlignment="center"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/Tvtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edit_tv"
+            android:hint="Title"
+            android:paddingLeft="10dp" />
+
+        <EditText
+            android:id="@+id/edit_title_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionNext"
+            android:enabled="false"
+            android:layout_below="@+id/Tvtitle"
+            android:layout_marginHorizontal="5dp" />
+
+        <TextView
+            android:id="@+id/TvPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edit_title_et"
+            android:hint="Price"
+            android:imeOptions="actionNext"
+            android:paddingLeft="10dp" />
+
+        <EditText
+            android:id="@+id/edit_price_et"
+            android:layout_width="match_parent"
+            android:inputType="number"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TvPrice"
+            android:layout_marginHorizontal="5dp" />
+
+        <TextView
+            android:id="@+id/location_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edit_price_et"
+            android:hint="Location"
+            android:paddingLeft="10dp" />
+
+        <EditText
+            android:id="@+id/edit_location_et"
+            android:layout_width="match_parent"
+            android:imeOptions="actionNext"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/location_tv"
+            android:layout_marginHorizontal="5dp" />
+
+        <TextView
+            android:id="@+id/TVSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edit_location_et"
+            android:hint="City"
+            android:paddingLeft="10dp" />
+
+        <Spinner
+            android:id="@+id/edit_city_Spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/TVSpinner"
+            android:textAlignment="center"
+            android:layout_marginRight="5dp"
+            android:spinnerMode="dropdown" />
+
+        <View
+            android:id="@+id/V1"
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:layout_below="@id/edit_city_Spinner"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="5dp"
+            android:background="#494949" />
+
+        <TextView
+            android:id="@+id/TVSpinner1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/V1"
+            android:layout_marginTop="5dp"
+            android:hint="Property Type"
+            android:paddingLeft="10dp" />
+
+        <Spinner
+            android:id="@+id/edit_property_Spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/TVSpinner1"
+            android:layout_marginRight="5dp"
+            android:textAlignment="center"
+            android:spinnerMode="dropdown" />
+
+        <View
+            android:id="@+id/V2"
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:layout_below="@id/edit_property_Spinner"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="5dp"
+            android:background="#494949" />
+
+        <TextView
+            android:id="@+id/TVFacility"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/V2"
+            android:layout_marginTop="5dp"
+            android:hint="Facilities"
+            android:paddingLeft="10dp" />
+
+        <EditText
+            android:id="@+id/edit_facilities_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/TVFacility"
+            android:maxLines="1"
+            android:layout_margin="4dp" />
+
+        <EditText
+            android:id="@+id/edit_desc_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edit_facilities_et"
+            android:layout_marginHorizontal="5dp"
+            android:background="@drawable/bg_edit_text"
+            android:gravity="top"
+            android:hint="Description"
+            android:minHeight="200dp"
+            android:imeOptions="actionDone"
+            android:padding="10dp" />
+
+        <Button
+            android:id="@+id/edit_post_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edit_desc_et"
+            android:layout_centerInParent="true"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/colorAccent"
+            android:text="Post" />
+
+    </RelativeLayout>
+</ScrollView>

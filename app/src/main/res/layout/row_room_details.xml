@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:id="@+id/relative_post"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:id="@+id/row_img_view"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/room" />
+
+        <TextView
+            android:id="@+id/row_post_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/row_img_view"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="Room for Rent"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/post_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/row_img_view"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="3000"
+            android:textColor="@android:color/black" />
+
+
+        <TextView
+            android:id="@+id/location_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/row_post_name"
+            android:text="Near Bhatbheteni, Naxal"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/create_at_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/row_post_name"
+            android:layout_alignParentRight="true"
+            android:inputType="date"
+            android:text="2020/05/11"
+            android:textColor="@android:color/black" />
+        <ImageView
+            android:id="@+id/row_not_available_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_not_available_circle" />
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.4dp"
+        android:layout_below="@id/relative_post"
+        android:layout_marginHorizontal="5dp"
+        android:background="#646363" />
+
+</RelativeLayout>

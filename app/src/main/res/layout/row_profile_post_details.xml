@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="#989595" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/profile_roomDetail_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:paddingRight="100dp"
+            android:paddingVertical="5dp"
+            android:text="One room for rent"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/more_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="5dp"
+            android:src="@drawable/ic_more_vert_black_24dp" />
+
+        <TextView
+            android:id="@+id/profile_days_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profile_locationName_tv"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="5dp"
+            android:text="2 days ago"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/profile_location_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profile_roomDetail_tv"
+            android:layout_margin="5dp"
+            android:text="Location:"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/profile_locationName_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profile_roomDetail_tv"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/profile_location_tv"
+            android:text="Sukedhara, Kathmandu" />
+
+        <TextView
+            android:id="@+id/profile_price_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profile_location_tv"
+            android:layout_margin="5dp"
+            android:text="Nrs.4000"
+            android:textColor="@android:color/black" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="#989595" />
+</LinearLayout>

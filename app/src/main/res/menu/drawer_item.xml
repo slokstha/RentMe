@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <group android:id="@+id/grp1">
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_person_black_24dp"
+            android:title="Profile" />
+    </group>
+    <group android:id="@+id/grp2">
+        <item
+            android:id="@+id/add_post"
+            android:icon="@drawable/ic_add_circle_black_24dp"
+            android:title="Add Post" />
+    </group>
+    <group android:id="@+id/grp3">
+        <item
+            android:id="@+id/vehicle"
+            android:icon="@drawable/ic_local_shipping_black_24dp"
+            android:title="Transportation" />
+    </group>
+    <group android:id="@+id/grp4">
+        <item
+            android:id="@+id/help"
+            android:icon="@drawable/ic_help_black_24dp"
+            android:title="Help" />
+    </group>
+    <group android:id="@+id/grp6">
+        <item
+            android:id="@+id/nav_aboutphn"
+            android:icon="@drawable/ic_info_black_24dp"
+            android:title="About" />
+    </group>
+    <group android:id="@+id/grp5">
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/ic_exit"
+            android:title="Logout" />
+    </group>
+
+
+</menu>

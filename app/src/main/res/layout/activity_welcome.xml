@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:layout_margin="5dp"
+    android:layout_gravity="center"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="80dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/ic_logo_rent_me" />
+
+    <TextView
+        android:id="@+id/txNa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome to RentMe"
+        android:textSize="22dp"
+        android:layout_below="@id/img"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="30dp"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"/>
+
+        <Button
+            android:id="@+id/BtLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Login"
+            android:textSize="18dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="5dp"
+            android:layout_below="@+id/txNa"
+            android:background="@android:color/white"/>
+        <Button
+            android:id="@+id/BtSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="SignUp"
+            android:textSize="18dp"
+            android:layout_below="@id/BtLogin"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/white"/>
+
+
+    <Button
+        android:id="@+id/skip_now_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="200dp"
+        android:text="Skip for Now"
+        android:textSize="16sp"
+        android:textColor="#7B7B7B"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/BtSignUp"
+        android:textAllCaps="false"
+        android:background="@android:color/transparent"
+        android:textAlignment="center" />
+
+</RelativeLayout>
