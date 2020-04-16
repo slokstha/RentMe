@@ -5,6 +5,7 @@ import android.content.SharedPreferences;
 import android.util.Log;
 
 import com.android.volley.AuthFailureError;
+import com.android.volley.DefaultRetryPolicy;
 import com.android.volley.Response;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.rentme.rentme.models.Token;
@@ -30,6 +31,9 @@ import java.util.Map;
             String tokenString = preferences.getString(Constants.userToken, null);
             Token tokenObj = new Gson().fromJson(tokenString, Token.class);
             this.token = tokenObj.getAccess_token();
+            setRetryPolicy(new DefaultRetryPolicy(5000,
+                    DefaultRetryPolicy.DEFAULT_MAX_RETRIES,
+                    DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
         }
         @Override
         public Map<String, String> getHeaders() throws AuthFailureError {

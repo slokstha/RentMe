@@ -16,12 +16,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textStyle="bold"
-            android:text="What is Rental App?"/>
+            android:text="What is Rent Me?"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
-            android:text="Hamrobazar.com is FREE online classified which enables individuals as well as companies to list wide variety of new or used product online. We at hamrobazar.com believe that Internet is a great promotional vehicle as well as communication channel for connecting buyers and sellers. Hamrobazar.com is perfect solution that helps to list your products for FREE."/>
+            android:text="Rent Me is free mobile app where user can provide proper renting rooms, flats or house details in kathmandu valley. It also provides rental shifting services from one place to another place."/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -31,39 +31,38 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
-            android:text="Unlimited potential customers.
-· 24/7 market place for your products and services.
-· Online catalog for your product reaching to consumer effectively.
-· Cheap way of advertising your product and services.
-· Your own control panel. From where you have total control over ads.
-· Add, edit and delete your ads immediately with minimum time and effort.
-· View ad traffic and hits to know how your products affect the customers.
-· Upload image for your ad to provide visual information for your ads.
-· Change your contact information as and when required by you.
-· Write comments on other user's ad and contact them through email."/>
+            android:text="As a member,
+You can add new room and transportation details.
+You can able to edit and delete the room and transportation details.
+You can upload image for room to provide visual information for your post.
+You can change your contact information and profile.
+You can change password if you forgot."/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textStyle="bold"
-            android:text="How can I register in the site?"/>
+            android:text="How can I register the app?"/>
 
         <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
-        android:text="	If you want to promote your product/service then you just have to register as member at hamrobazar first. Just click on Register link at top of the website to get started. Fill in your contact details mentioned in online registration form and submit."/>
+        android:text="To register the account, you need to click on the Login/Signup button which is in side navigation drawer. After clicking the button,
+you can see signin form and click on 'Don't have an account?' and then fill up the form and click on signup button.	"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textStyle="bold"
-            android:text="How do I post an ad for my product or services in the site?"/>
+            android:text="How do I post room, flat or house in the app?"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
-            android:text="Once you have registered an account, then you just have to login to the Member Area of the site. Once logged in, click on 'Post New Ad' option from the menu. You will be then asked to choose a suitable category for your ad. Then fill up the form with description, price of your product and click on post button. Note:- if you dont know your product category then please search the products in our site to find if there is existing product which will give you idea about the category."/>
+            android:text="Once you have registered an account, then you just have to login.
+Once logged in, click on 'Add Post ' option which is in side navigation drawer.
+Then fill up the form with description, price of the room and click on post button. "/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -74,34 +73,48 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
-            android:text="Yes. you can upload images of your product which will be listed with your ad. Infact ads with real images have more consumer appeal and receive more views and better inquiries."/>
+            android:text="Yes. you can upload images of your room which will be listed with your ad.
+ Infact ads with real images have more consumer appeal and receive more views and better inquiries."/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textStyle="bold"
-            android:text="Can I change the details of product later?"/>
+            android:text="Can I change the details of ads?"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
-        android:text="Yes. you can change the details of your products later whenever you require it. Just login to your account and click on 'My Ads' option from the menu. You will see list of all the ads you have posted in the site. From there you can edit your ad, change/upload your product picture, renew, delete or make your product sold status."/>
+        android:text="Yes. you can change the details of your ads later whenever you require it.
+Just login to your account and click on 'Profile' option from the side navigation drawer.
+You will see list of all the ads you have posted in the app.
+From there you can edit your room details, change/upload your room picture, delete or make your room sold status."/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textStyle="bold"
-            android:text="Does a Buyer need to register at hamrobazar.com?"/>
+            android:text="How do I post transportation details in the app?"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
-            android:text="	No. Buyer does not have to register to hamrobazar, he/she can browse the entire website and search the posted ads without any registration. However in order to post comment on ads and send email to other users, registration is required."/>
+            android:text="Once you have registered an account, then you just have to login.
+Once logged in, click on 'Vehicle ' option from the bottom navigation.
+Then click on 'Add new' button and fill up the information and click on post button. "/>
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Does a Buyer need to register at RentMe?"/>
 
-
-
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:text="	No. Buyer does not have to register to rentme, he/she can search the posted ads without any registration."/>
 
     </LinearLayout>
 

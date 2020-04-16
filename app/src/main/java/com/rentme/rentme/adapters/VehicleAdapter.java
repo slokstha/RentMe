@@ -5,6 +5,7 @@ import android.content.SharedPreferences;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -14,6 +15,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.google.gson.Gson;
 import com.rentme.rentme.R;
 import com.rentme.rentme.interfaces.AdapterClickListner;
+import com.rentme.rentme.interfaces.VehicleAdapterClickListner;
 import com.rentme.rentme.models.User;
 import com.rentme.rentme.models.Vehicle;
 import com.rentme.rentme.utils.Constants;
@@ -26,9 +28,9 @@ import java.util.List;
 public class VehicleAdapter extends RecyclerView.Adapter<VehicleAdapter.VehicleViewHolder> {
     private List<Vehicle> vehicles;
     Context context;
-    AdapterClickListner listner;
+    VehicleAdapterClickListner listner;
 
-    public VehicleAdapter(List<Vehicle> vehicles, Context context, AdapterClickListner listner) {
+    public VehicleAdapter(List<Vehicle> vehicles, Context context, VehicleAdapterClickListner listner) {
         this.vehicles = vehicles;
         this.context = context;
         this.listner = listner;
@@ -74,6 +76,7 @@ public class VehicleAdapter extends RecyclerView.Adapter<VehicleAdapter.VehicleV
     public class VehicleViewHolder extends RecyclerView.ViewHolder {
         private TextView details, name, price, phone, service_location;
         ImageView deleteBtn;
+        Button btnCallVehicle;
 
         public VehicleViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -86,7 +89,15 @@ public class VehicleAdapter extends RecyclerView.Adapter<VehicleAdapter.VehicleV
             deleteBtn.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    listner.onClick(getAdapterPosition(), v);
+                    listner.dltBtnOnClick(getAdapterPosition(), v);
+                }
+            });
+
+            btnCallVehicle = itemView.findViewById(R.id.btn_call_vehicle);
+            btnCallVehicle.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    listner.callBtnOnClick(getAdapterPosition(), view);
                 }
             });
         }

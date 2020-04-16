@@ -3,12 +3,14 @@ package com.rentme.rentme.activities;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.android.volley.DefaultRetryPolicy;
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
@@ -19,6 +21,7 @@ import com.google.gson.Gson;
 import com.rentme.rentme.R;
 import com.rentme.rentme.adapters.VehicleAdapter;
 import com.rentme.rentme.interfaces.AdapterClickListner;
+import com.rentme.rentme.interfaces.VehicleAdapterClickListner;
 import com.rentme.rentme.models.Vehicle;
 import com.rentme.rentme.network.Api;
 import com.rentme.rentme.network.CheckConnectivity;
@@ -64,11 +67,19 @@ public class VehicleDetailActivity extends AppCompatActivity {
     private void initViews() {
         recyclerView = findViewById(R.id.recycler_transport);
         btn_add_vehicle = findViewById(R.id.btn_add_vehicle);
-        vehicleAdapter = new VehicleAdapter(vehicles, this, new AdapterClickListner() {
+        vehicleAdapter = new VehicleAdapter(vehicles, this, new VehicleAdapterClickListner() {
             @Override
-            public void onClick(int position, View view) {
+            public void dltBtnOnClick(int position, View view) {
                 Vehicle vehicle = vehicles.get(position);
                 callDelteApi(vehicle.getId());
+            }
+
+            @Override
+            public void callBtnOnClick(int position, View view) {
+                Vehicle vehicle = vehicles.get(position);
+                Intent intent = new Intent(Intent.ACTION_DIAL);
+                intent.setData(Uri.parse("tel:"+vehicle.getContact()));
+                startActivity(intent);
             }
         });
         preferences = getSharedPreferences(Constants.sharePrefName, MODE_PRIVATE);
@@ -135,6 +146,9 @@ public class VehicleDetailActivity extends AppCompatActivity {
             }
         });
         if (CheckConnectivity.isNetworkAvailable(this)) {
+            jsonObjectRequest.setRetryPolicy(new DefaultRetryPolicy(5000,
+                    DefaultRetryPolicy.DEFAULT_MAX_RETRIES,
+                    DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
             request.add(jsonObjectRequest);
         } else {
             dialog.dismiss();
